@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gay Check</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    @keyframes rainbow {
+  12.5% {
+    color: #FF0000;
+  }
+  25% {
+    color: #FFA500;
+  }
+  37.5% {
+    color: #FFFF00;
+  }
+  50% {
+    color: #7FFF00;
+  }
+  62.5% {
+    color: #00FFFF;
+  }
+  75% {
+    color: #0000FF;
+  }
+  87.5% {
+    color: #9932CC;
+  }
+  100% {
+    color: #FF1493;
+  }
+}
+    
+    .rainbow-text {
+      font-size: 3em; /* Change this value to adjust the text size */
+      animation: rainbow 5s infinite linear;
+    }
+  </style>
+<body>
+    <h1>Gay Check</h1>
+    
+    <label for="inputName">Enter full name of the person (e.g. Johnathon Johnson)</label>
+    <input type="text" placeholder="Johnathon Johnson" id="inputName">
+    <button onclick="checkGayness()">Submit</button>
+
+    <div id="identityDiv" style="display: none;">
+        <h1 class="rainbow-text">
+            GAYLORD
+        </h1>
+    </div>
+</body>
+</html>
